@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Information</h1>
+        <div class="form-section">
+            <h2>Add New Customer</h2>
+            <form id="customer-form">
+                <input type="hidden" id="customer-id">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" required>
+                </div>
+                <button type="submit" id="submit-btn">Add Customer</button>
+                <button type="button" id="cancel-btn" style="display:none;">Cancel Edit</button>
+            </form>
+        </div>
+        <div class="table-section">
+            <h2>Customer List</h2>
+            <table id="customer-table">
+                <thead>
+                    <tr>
+                        <th>Name:</th>
+                        <th>Email:</th>
+                        <th>Phone:</th>
+                        <th>Address:</th>
+                        <th>Actions:</th>
+                    </tr>
+                </thead>
+                <tbody id="customer-list">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
